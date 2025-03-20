@@ -1,0 +1,317 @@
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage{graphicx}
+\usetheme{CambridgeUS}
+\usepackage{stmaryrd}
+\usepackage{mathrsfs}
+\usepackage[makeroom]{cancel}
+\usepackage{amsmath,amsthm,stmaryrd,amssymb,bbm,amsfonts,amstext, graphicx, multicol, array}
+
+
+
+\newcommand\vertarrowbox[3][2ex]{%
+  \begin{array}[t]{@{}c@{}} #2 \\
+  \left\uparrow\vcenter{\hrule height #1}\right.\kern-\nulldelimiterspace\\
+  \makebox[0pt]{\scriptsize#3}
+  \end{array}%
+}
+
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+\title{ECON2840 Spring 2024\\Paper Presentation}
+\subtitle{Daron Acemoglu, The simple macroeconomics of AI, Economic Policy, Volume 40, Issue 121, January 2025, Pages 13–58}
+\author{Adrien Foutelet}
+\date{\today}
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+\AtBeginSection[]{
+\begin{frame}
+\vfill
+\centering
+\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+\usebeamerfont{title}\insertsectionhead\par%
+\end{beamercolorbox}
+\vfill
+\end{frame}
+}
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+\begin{document}
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+%
+\maketitle
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+%
+\section{Context and Motivation}
+
+
+\begin{frame}{A lot of hype, hindisght from robotization, first experimental results}
+
+    \begin{itemize}
+        \item In the media:
+        \begin{itemize}
+            \item Science fiction fantasies,
+            \item ChatGPT: fastest spreading tech mlatform in history,
+        \end{itemize}
+        \item In the business world:
+        \begin{itemize}
+            \item Goldman Sachs (2023): Over ten years, 7\% increase in global GDP, 1.5\% annual increase in US productivity growth,
+            \item McKinsey Global Institute (2023): a USD 17-26 trillion increase to the global economy.
+            \item 12\% of the labor force.
+        \end{itemize}
+        \item Recall robotization (Acemoglu, Restrepo, 2020):
+        \begin{itemize}
+            \item Positive outcomes on firm owners and managers,
+            \item Negative outcomes on workers.
+        \end{itemize}
+        \item Experiments: nontrivial productivity gains driven by improvements for less productive/lower-performing workers.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Research question and strategy}
+
+\textit{What insight can we get, from the Macro labor toolbox, on the outcomes of AI for a ten-year horizon?}
+\newline
+\begin{itemize}
+    \item Fitting the Task.Skill.Capital framework from Acemoglu, Autor (2011); Restrepo (2018, 2019, 2022),
+    \item Empirical calibration and prediction.
+\end{itemize}
+
+\end{frame}
+
+\section{Model}
+
+\begin{frame}{Production}
+
+\begin{itemize}
+    \item A unique final good,
+    \item All markets are competitive,
+    \item A continuum of tasks: \([0;N]\),
+    \item Output of task z: \(y(z)\),
+    \item Production function: \textcolor{red}{\(Y=B(N)\Big(\int_{0}^{N}y(z)^{\frac{\sigma -1}{\sigma}}dz\Big)^{\frac{\sigma}{\sigma -1}}\)},
+    \item Constant elasticity of substitution (tasks are complements): \(\sigma\),
+    \item System-wide effect of new tasks: \(B(N)\),
+    \item Task production function: \textcolor{red}{\(y(z)=A_L\gamma_L(z)l(z)+A_K\gamma_Kk(z)\)}
+    (in fact \(y(z)=A_L\gamma_L(z)[l(z)^{1-\kappa}k_C(z)^\kappa)]+A_K\gamma_Kk(z)\)),
+    \item labor/capital-augmenting productivity terms: \(A_L\), \(A_K\),
+    \item Labor/capital task-specific productivity schedules: \(\gamma_L(z)\), \(\gamma_K(z)\).
+\end{itemize}
+Assume \(\frac{\gamma_L(z)}{\gamma_K(z)}\) increasing in z.
+
+Hence labor has a comparative advantage in higher-indexed tasks.
+
+\textcolor{red}{Hence \(z\in[0;I]\) is produced via capital; \(z\in]I;N]\) is produced via labor.}
+
+\end{frame}{}
+
+\begin{frame}{Labor, capital, consumption}
+ 
+\begin{itemize}
+    \item Measure-one population,
+    \item High and low skill labor for fractions \(\Phi^H\), \(\Phi^U\) of the population endowed with \(\lambda^H\), \(\lambda^U\) units of labor (tasks can be performed by either),
+    \item \(\lambda^U < \lambda^H\),
+    \item Supply of labor: \textcolor{red}{\(\Phi^H\lambda^H+\Phi^U\lambda^U\)=L},
+    \item Wage rate: \(\omega\),
+    \item Aggregated capital: \(K=\int_{0}^{N}k(z)dz\)
+    \item Task-specialised capital \(k(z)\) produced linearily from final good Y with price \textcolor{red}{\(R(z)=R(K)\rho(z)\)},
+    \item \textcolor{red}{Households consume the final good net of capital expenditures}.
+\end{itemize}    
+
+\end{frame}
+
+\begin{frame}{Equilibrium}
+
+Characterization of an equilibrium:
+
+\begin{itemize}
+    \item z is produced by labor iff:
+    \[\frac{\omega}{A_L\gamma_L(z)}<\frac{R(z)}{A_K\gamma_K(z)}\],
+    \item
+    \[k(z)=argmax_{k(z)} \{Y-R(z)k(z)\}\],
+    \item Labor market clearing:
+    \[L=\int_{0}^{N}l(z)dz\].
+\end{itemize}
+We skip the solution. The point is to compute comparative statics.
+
+\end{frame}
+
+\begin{frame}{Towards comparative statics: how AI affects production}
+
+\begin{itemize}
+    \item Extensive margin automation i.e., increase in \(I\):
+    \begin{itemize}
+        \item AI reduces the cost of capital \(\rho(z)\) for some marginal tasks above \(I\),
+        \item AI increases the effectiveness of capital \(\gamma_K(z)\) for some marginal tasks above \(I\),
+    \end{itemize}
+    \item Greater task complementarities, for \(z\in[0;I]\):
+    \begin{itemize}
+        \item AI raises the task-specific productivity of labor \(\gamma_L(z)\),
+        \item AI reduces the cost of complementary capital \(k_C(z)\),
+    \end{itemize} 
+    \item Intensive margin automation, for \(z\in[0;I]\):
+    \begin{itemize}
+        \item AI reduces the cost of capital \(\rho(z)\),
+        \item AI increases the effectiveness of capital \(\gamma_K(z)\),
+    \end{itemize}
+    \item New labor-intensive products or tasks i.e., increase in N:
+    \begin{itemize}
+        \item "Good" or "bad" in terms of social value, possibly causing externalities.
+    \end{itemize}
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Comparative statics}
+
+\begin{itemize}
+    \item Ambiguous sign of \(\frac{dln\omega}{dI}\):
+    \begin{itemize}
+        \item Increase in productivity \(\rightarrow\) Increase in wages,
+        \item Displacement of workers across tasks \(\rightarrow\) Decrease in wages.
+    \end{itemize}
+    \item Ambiguous sign of \(\frac{dln\omega}{d\gamma_L(z)}\):
+    \begin{itemize}
+        \item Increase in easiness to perform \(\rightarrow\) Decrease in task price not fully offset,
+        \item Unclear offset by increase in productivity.
+    \end{itemize}
+    \item For \(z\in[0;I]\), \(\frac{dln\omega}{d\gamma_K(z)}>0\), \(\frac{dln\omega}{d\rho(z)}>0\), \(\frac{dN}{d\rho(z)}>0\).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Simplifying the job for aggregates: Hulten's theorem}
+
+How micro-level productivity improvements translate into macro changes.
+
+\[GDP=Y=\int_{0}^{N}p(z)y(z)dz\]
+
+At the equilibrium, any small change in an element of \(\{B;A_L;A_K;\gamma_L(z);\gamma_L(z);I;N\}\) (technology) has second-order impact on GDP via:
+\begin{itemize}
+    \item Reallocation of factors across tasks,
+    \item Prices.
+\end{itemize} 
+
+This takes us to
+\[dlnY=dlnTFP+S_KdlnK\]
+(with \(s_K\) the capital share of GDP) and
+\[dlnTFP=\text{Costs savings from automation}*\text{GDP share of AI-impacted tasks}\]
+
+\end{frame}
+
+\begin{frame}{Finalizing the theory}
+
+\begin{itemize}
+    \item Distinguishing between easy and hard to learn tasks
+    
+    \(\rightarrow\) Different productivity gain magnitudes,
+    \item Welfare analysis including the negative exterality from "bad" tasks,
+    \item Inclusion of multiple demographic groups
+    
+    \(\rightarrow\) Theoretical arguments in favour of rising inequality due to an increase in the productivity of low-skilled workers.
+\end{itemize}
+
+\end{frame}
+
+\section{Empirics}
+    
+\begin{frame}{Logic, sources, first estimates}
+
+    Estimates of which tasks can be automated with AI;
+    Estimates of the cost savings;
+    Estimates of new tasks.
+    
+    \(\rightarrow\)
+    
+    TFP growth estimates; GDP growth estimates; Wage growth estimates; Inequality implications.
+    \newline
+    \begin{itemize}
+        \item GDP share of tasks impacted by AI within the next 10 years:
+        \begin{itemize}
+            \item Eloundou et al. (2023) \(\rightarrow\) Ask GPT-4 to classify O*NET 19,265 tasks and 2,087 Detailed Work Activity and infer an automation index.
+            \item U.S. Bureau of Labor Statistics National Occupational Employment and Wage Estimates.
+        \end{itemize}
+        4.6\%.
+        \item Cost savings from AI:
+        \begin{itemize}
+            \item Peng et al. (2023),
+            \item Noy and Zhang (2023),
+            \item Brynjolfsson et al. (2023).
+        \end{itemize}
+        20.5\%.
+
+    \end{itemize}
+
+\end{frame}
+
+    
+\begin{frame}{TFP growth, GDP growth, bad tasks}
+    
+    \begin{itemize}
+        \item TFP growth over 10 years:
+        \begin{itemize}
+            \item Ignoring hard and easy tasks:
+            
+            0.71\%. Likely to reach 1\% if the cost of AI decreases optimisticly over time,
+            
+            \item Considering hard and easy tasks:
+            
+            0.55\%. Likely to reach 1\% if the cost of AI decreases optimisticly over time,   
+        \end{itemize}
+        \item GDP growth over 10 years:
+        \begin{itemize}
+            \item Ignoring hard and easy tasks:
+            
+            1.1\%,
+
+            \item Considering hard and easy tasks:
+            
+            0.92\%,
+        \end{itemize}
+        \item Bursztyn et al. (2023) (estimate the welfare effect of social media):
+        
+        Currently 0.072\% of GDP, sizable effect on welfare.
+    \end{itemize}
+
+\end{frame}   
+    
+\begin{frame}{Wages and inequality}
+
+Acemoglu and Restrepo (2022): The chore of the reasoning is the ripple effects: the displacement of one demographic group impacts others.
+
+\begin{itemize}
+    \item Least exposed: workers with less than high school,
+    \item Medium: postgraduate workers,
+    \item Most exposed: workers with college degrees and those with high school degrees or some college.
+\end{itemize}
+
+Within the next ten years:
+\begin{itemize}
+    \item Predicted wage impacts do not appear to increase inequality between education groups.
+    \item Predicted impact on GDP considering hard and easy tasks: 1.62\%.
+    \item Predicted impact on capital share considering hard and easy tasks: 0.38\%.
+\end{itemize}
+
+Consequences on inequality of AI will not be as adverse as those from pre-AI automation.
+
+No evidence of inequality reduction.
+
+\end{frame}       
+
+\section{Conclusion}
+
+
+\end{document}
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+% ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
