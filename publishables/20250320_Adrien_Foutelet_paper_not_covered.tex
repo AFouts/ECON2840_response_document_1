@@ -1,0 +1,186 @@
+\documentclass{article}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,stmaryrd,amssymb,bbm,amsfonts,amstext,graphicx,multicol,array}
+\usepackage{subfigure}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{pdfpages}
+\usepackage[numbers]{natbib} % Use natbib with numerical citations
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{graphics, graphicx}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor =blue,
+    citecolor = blue
+}
+
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+
+\title{ECON2840 Spring 2025\\Response Document 1\\Your own summary, synthesis and critique of one or two of the papers from the syllabus that we have not yet covered in class\\
+Anton Korinek and Donghyun Suh, 2024. "Scenarios for the Transition to AGI," Papers 2403.12107, arXiv.org.
+}
+\author{Adrien Foutelet}
+\date{February 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+
+This paper borrows the task-skill-capital model from Acemoglu and Restrepo (2018, 2022) and applies it to the case for the spread of Artificial General Intelligence in a developed economy. From the exogeneous threshold beyond which tasks can be done by labor only, they characterize two regimes (regions), depending on the \(K/L\) ratio: one where labor is relatively scarce and where, at equilibrium, labor is employed for tasks without capital (region 1); one where labor is relatively abundant and where, at equilibrium, at least some labor competes against capital. In region 1, wages are greater than the rate of return of capital while in region 2 wages equal the rate of return of capital and total factor productivity.
+
+For a state of automation index in region 1, a rise in automation rises both output and the rate of return of capital. In contrast, how wages evolve is ambiguous and depends on assumptions on the economy. The authers explore several different cases:
+
+As the state of automation index rises, output and the rate of return of capital rises if the economy is in region 1 but remains stable if the economy is in region 2. The evolution of wages in contrast is more ambiguous: it rises and then decreases as it moves towards region 2 while remaining in region 1, until reaching the its lower bound at the rate of return of capital and remaining their in the whole of region 2. Different \(K/L\) ratios lead to different lower bounds. Strong complementarity between tasks pushes the point where wages start decreasing closer to the region 1-region 2 threshold.
+
+The question then is how quickly the state of automation will rise over time and within what limits. Also, a race between automation and capital accumulation, shown to have opposing effects effects on wages, will take place, in a fashion defined by the total factor productivity, the elasticity of substitution between tasks, the intertemporal utility discount factor, the elasticity of intertemporal substitution of consumption, the depreciation rate of capital, and . It is reasonable to assume the growth of the index is exponential, considering a series of well know regularities. As for the bounds, the authors explore several scenarios callibrated with realistic parameters:
+
+\begin{itemize}
+    \item A business as usual scenario, where the bounds are infinite, implying that the cumulated fraction of automated tasks will keep increasing forever while never covering all tasks. Total wages are increasing forever and so does than the total returns of capital.
+    \item A baseline Artificial General Intelligenc scenario, where bounds are finite and where all tasks will be performed by machines at a 20 year time horizon. Total wages callapse to reach the region 2 lower bound in about 17 years while total returns of capital increase forever.
+    \item An aggressive Artificial General Intelligenc scenario, where bounds are finite and where all tasks will be performed by machines at a 5 year time horizon. Total wages callapse to reach the region 2 lower bound in about 3 years while total returns of capital increase forever.
+    \item A bout of automation scenario, where a fraction of all tasks will all be automated at a close time horizon, before a domain with infinite bounds is reached such that, while increasing, the cumulated fraction of automated tasks will never cover all tasks. Total wages callapse to reach the region 2 lower bound and, after some time, starts increasing forever. Total returns of capital first increase by a lot an then slowly decrease.
+\end{itemize}
+
+Finally, the authors explore several extensions of the four scenarios:
+\begin{itemize}
+    \item Exogenously differentiating between reproducible capital and capial in fixed supply (like raw materials), automation eventually outpaces capital accumulation in any case, resulting in plumetting wages in the long run.
+    \item With endogenous technological progress, considered an agregation of atomistic computational tasks with heterogenous complexity and susceptible to be performed by capital and/or labor, in the long run the economy experiences an explosion in growth and per worker salaries.
+    \item With exogenous choice of protecting certain tasks against automation, with a fine tuning of that choice ith respect to the rate of task automation, wages can rise exponentially in the long run.
+    \item With exogeneous labor skill distribution, workers who are perfect substitutes to machines earn the rate of return of capital while others benefit from automation. Depending on whether automation will eventually cover or not the most complex tasks performed by the most skilled workers or not, there may be ever-growing inequality or convergence of all wages to the rate of return of capital.
+    \item With "compute" as the part of capital that is specific to AI, which translates technically in as many laws of motion of task-specific capital as tasks, if automation does not proceed slowly and stradily (discreet masses of tasks are suddently amendable to automation), the race between automation and capital accumulation leads to non-monotonic responses of wages (decreasing first and then increasing) and return rate of automated-task-specific capital (very high first and normal after an adjustment period) 
+\end{itemize}
+
+\section{Critique}
+
+
+
+\section{Parking lot}
+
+
+
+
+
+
+
+
+A micro theory of job seearch includes profit maximising froms (labor demand) and utility-maximizing individuals (labor supply) and frictions to account for involuntary unemployment, all considered in a partial equilibrium. Frictions include the imperfect knowledge of available jobs, reservations wage, and job search effort. The basic predictions are that within homogenous types, increasing the generosity of UI benefits decreases job finding rate and weakly increases reservations and reemployment wages conditional on unemployment duration. With multiple types, it increases unemployment duration but dynamic selection makes the reemployment wages not necessarily increase for all unemployment durations, because of changing composition of the unemployed (e.f., skill depreciation).
+
+The main stylised empirical findings that hold across time and space on the matter come from RDD. They are:
+\begin{itemize}
+    \item An increase in UI generosity leads to longer unemployment durations.
+    \item An increase in potential benefit duration (PBD) leads to lower periodic job finding hazard.
+    \item UI exhaustion leads to a spike in job finding hazard.
+    \item Longer unemployment duration goes with lower reemployment wage.
+    \item Changes in PBD affect reemployment wage moderately and ambiguously.
+\end{itemize}
+ 
+
+
+
+
+
+
+
+
+
+Enriching the multiple type framework of the model allows fitting all emprical patterns from UI policies. However mutiple functional forms, heterogeneity nature, and microfoundations (source of hazard) are possible to fit a pattern (underidentification) with only tedious ways to discriminate across them. Typically, administrative data alone is not sufficient for that, hence the use of high frequency panel survey data, online job platform data, consumption data, etc.
+
+Survey data on search offort include the American Time Use Survey data (Krueger and Mueller, 2010 and 2012). The drawback of these is that they are small when conditioning on unemployment and are cross-sectional. Panel data throughout the unemployment spell was also made and studied. Krueger and Mueller (2011) did these online with 63000 individuals over two years. DellaVigna et al. (2022) did with by text over 18 weeks per cohort. These studied confirmed the stylized facts. They specified more precisely time devoted to job search, especially the decreasing effort and the spike at UI exhaustion, and the worsening wellbeing of job seekers. Search platform data was also used and confirmed the patterns as well. Notably, Marinescu (2017) found from careerbuilder.com data that PBD extension doesn't affect labor market tightness. Decreasing search effort over time is a controversial finding as it remains ambiguous as it may by conterbalanced by search platform switching by the unemployed. Also, US UI claim audit data (Massenkoff, 2023) display no impact of UI on search effort.
+
+On reservation wages being hard to measure, the literature focuses on target wages (infered from people's job applications). The survey data from Krueger and Mueller (2016)show that reported reservation wages are on average at least as high as pre-unemployment wages, with high variance, and are inelastic to benefit level and unemployment duration, except for the old and the high earning people. Le Barbanchon et al. (2019) collect French UI system reservatio wahe data and find no effect of PBD. In other studies, target wage is shown to decrease slightly over time.
+
+On consumption, Gruber (1997) found strong decrease in food consumption at the onset of unemployment using the Panel Study of Income Dynamics, attenuated by UI. Ganong and Noel (2019) use JP Morgan Chase high frequency data to document a 6\% drop in consumption at the start of the spell, followed a 1\% per month with a final 12\% drop before at exhaustion, totaling a 25\% dicrease.
+
+The search model itself was densely refined recently. It is now certain that search intensity strongly responds to UI generosity while job selectivity does not. There is moderate evidence that reemployment wage depends on the unemployment duration, with skill depreciation and declining researvation dand target wages. Search effort is more important in shaping search outcomes that reservation wages. There is strong evidence that job finding rates depend on the unemployment duration, accounted for by dynamic selection instead of search effort and reservation wages. There is also clearly present bias that leads to too little search (60-90 minutes per day). In terms of reference (past wage) dependence, results are ambiguous both on search intensity, where it may affect the timing of the hazard spike, and wages, where wage offers are compared to previous wages. It is also not clear whether job seekers oberestimate job finding probability, underestimate returns to search, and have a locus of control that could effect search effort and job finding. Outlooks for future research would be to explore mental health during unemployment more in depth and rigorously (Ahammer and Pachham, 2023; Koszegi et al., 2022).
+
+\section{Design of UI policy}
+
+The standard framework of optimal UI was introduced by Baily (1978) and extended by Chetty (2006, 2008). The Baily-Chetty formula provides a direct mapping between theoretical welfare effects and empirical counterparts and justifies the computation of the elasticity of unemployment duration with respect to benefit generosity and the marginal utility change from employment to unemployment. A dynamic version of the model allows to consider PBD (Schmieder and van Wachter, 2016). There, an analytically higher share of unemployed whose benefits exhaust and who consequently do no pay taxes, cause less tax revenue and hence higher increase on the employed. Because of that, the sufficient statistics become the behavioral costs (elasticity of expected duration of covered unemployment with respect to benefit level and the elasticity of non-employment duration) and the consumption-smoothing (the social value of UI changes).
+
+The main identification threat in causal elasticity estimates is that unemployed workers select into unemployment insurance categories based on unobservables (e.g., longer PBD for more experienced workers). When PBD is a deterministic function of past work experience with discontinuous jumps, RDD are appropriate (Card et al., 2007). Regression kink desigs (RKD) are also used (Card et al. 2015a, 2015b; Landais, 2015) where caps on benefit levels generate kinks in the relationship between previous wages and benefits. DiD are also used, leveraging exogenous reform in policy parameters that affect only a subpopulation of workers and yields a natural control group. However, reforms of UI are rarely exogenous, which weakens most DiD. Since, in the US, UI is contracyclical by design (beyond an unemployment threshold appears appears the Extended Benefit and Emergency Unemployment Compensation program), trigeer designs that control for a flexible parametric function of unemployent when regressing unemployment duration on PBD, with causal identification obtained from the discontinuous jump of PBD at unemployment triggers (Rothstein, 2011). On average across the literature, the elasticity with respect to PBD is 0.49 and 0.40 with respect to replacement rate. Using a UI tax rate of 3\%, the behavioral cost of each additional dollar transfer of UI benefits has median of USD 0.35.
+
+The social value of more generous UI can be quantified with a consumption-based approach (Gruber, 1997), giving that the marginal value of a one dollar transfer of unemployment benefits is USD 0.13. Chetty (2008) develops a liquidity to moral hazard ratio approach, leveraging policy variation, like changes in severance payments, to infer the social value of UI from behavioral search responses, like savings. He shows that the search response is to be decomposed into a substitution and an income. The pure moral hazard cost is then the difference between the total efffect on search and the income effect. The two approached were also combined in an alternative third one, the marginal-propensity-to-consume approach (Landais and Spinnewijn, 2021). Les explored but easier on paper in the method of revealed preferences (price of purchasing extra UI coverage). Overall, estimates of the social value of UI differ widely across identification methodes. The most recent ones, robust to risk-aversion assumptions, yield high estimates.
+
+Back to the Baily-Chetty formula, plugging back our three values, depending on how the marginal welfare effect of a transfer of one dollar to unemployed workers compares to 0, the UI is at an optimum or not. The issue is then that this does not give the social planners guidance on whether leveraging UI or other policy instruments is to be preferred, hence the use of MVPF (Hendren and Sprung-Keyser, 2020), where this time the government does not need to close the budget constraint. Calibrated with estimates from the literature covered, European MVPFs for increasing UI benefits are between 0.24 and 0.99 and US MVPFs are between 0.51 and 1.18. In Europe, there appears to be no gain in changing the policy mix UI benefit-PBD while in the US can increase welfare by increasing spending on PBD and dicreasing spending on benefit level. More investigations are needed here (not enough estimations of sufficients statistics and potential error). Still, formally, because of UI exhaustees who benefit from PBD extension are negatively selected on potential wages, a policy mix with redistribution would tilt towards PBD extension.
+
+In most recent studies like Schmieder et al. (2016), more generous UI policy decreases wages imposing second order behavioral cost to provide UI (through taxes). Regarding job separation, there is unclear evidence for zero or positive effects from UI eligibility (e.g., Van Doornik et al., 2023). The effects seem large for senior workers (e.g., Jäger et al, 2023). Lusher et al. (2022) find that an 18-week PBD extension during the Great Recession in the US led to a 2\% decrease in cashier scanning speed: effects on efforts are modest.
+
+UI benefit designs are, in practice, time-varying. Shavell and Weiss (1979) give theoretical reason to make benefits decline over time, but an initial increasing trajectory might be optimal when workers have initial wealth at job loss. The empirical literature (e.g., Kolsrud et al., 2018) converges to the necessity of introducing an endogenous wedge between consumption and benefits.
+
+Whether benefits and PBD should be procyclical (Kroft and Notowidigdo, 2016) or countercyclical (Schmieder et al., 2012) is ambiguous. The available micro empirical evidence suggests that behavioral costs of UI are lower during recessions.
+
+Substitution with other programs like disability insurance (DI) is unclear the work is yet to be done on the positive externalities of UI on crime and health.
+
+On the macro side (taking Baily-Chetty to GE), UI programs may affect the job finding rate of uncovered job seekers. It may also affect job creation. To account for these, the model is supplemented by including labor market tightness in the individual job finding rate, and by seeing that UI programs increase social welfare if they push tightness towards its efficient level (Landais et al., 2018). To quantify the importance of macro effects, designs are developed to mimick randomization at the market level (job seekers, vacancies, wages). Recent empirical evidence (e.g., Boone et al., 2012) suggests that macro elasticity of unemployment with respect to UI (total response of unemployment to a change in UI with full endogeneity) is not larger than it micro counterpart (change in unemployment due to the reaction of unemployed search effort, holding tighness constant), possibly smaller. Therefore, the macro spillovers don't seem to matter much.
+
+\section{Active labor market policies}
+
+ALMPs aim at reducing moral hazard from benefit
+receipt by imposing search requirements and monitoring search efforts. They also aim at improving the efficiency of individual job search and
+speeding up the return to employment of unemployed job seekers by providing counseling. Finally, they aim at reducing skill mismatch in the labor
+market by providing skill training to low wage and unemployed workers,
+allowing them to access better paid jobs and thus improving their labor
+market outcomes. Card et al. (2018) consider five types: job search assistance (JSA), training programs, employment subsidies in private sector jobs, public sector employment programs, and compounds of all multiple types. Their meta analysis shows that:
+\begin{itemize}
+    \item Short run program effects improve in the medium and longer run,
+    \item The time profile of program effects varies by program type. While job search assistance programs have stable effects over different horizons, the effects of programs with a human
+    capital component improve over time,
+    \item There is heterogeneity of program effects for different participant groups and of potential gains from matching specific participants to specific program types.
+    \item Program effects vary with cyclical conditions: ALMPs have
+    larger impacts in times of low GDP growth or high unemployment.
+\end{itemize}
+I already summarised Crépon and van den Berg for another class, the most thorough review ot the literature.
+
+A number of recent studies provide insight about the role of caseworkers involved in ALMP programs. Data on matches between job-seekers and caseworkers were exploited. Also, RCTs with controled assignments of job-seekers to caseworkers were used.  Michaelides and Mueser (2020) evaluate four
+programs in three US states that were implemented in an experimental design.
+Potential participants were randomly assigned to receive letters inviting them
+to meetings with a caseworker. At the meetings, an attendant's eligibility status
+was assessed and non-eligible benefit recipients were disqualified. The remaining attendants received counseling services, information about other job search services, and referrals to training
+programs. The programs shortened participants' unemployment
+benefit receipt durations either because individuals did not attend the meeting
+or because they were disqualified after the assessment. Programs with a counseling component increased employment and earnings
+of participants over the first year after program assignment. Manoli et al. (2018) showed that that kind of effects persisted over up to 8 years. Cederlöf et al. (2021) estimate the value added of case-
+workers in Sweden with respect to job finding and job quality. The impacts of caseworker experience and job-specific market experience are substantial on search outcomes along job finding, job quality; long-run earnings, and long-run employment outcomes.
+
+Programs evaluated recently have focused on specific groups like disadvanted workers. Bobonis et al. (2022) evaluate lon-run effects of Self-Sufficiency Project Regular (earning supplements) and Plus (earning supplements and intensive employment support services) programs for single parents in Canada. The plus program had long-lasting earnings gains compared to the
+regular program where earnings gains faded quickly after the earnings supplements had expired. Plus participants experienced an increase in full-time employment and a decrease in receipt of welfare benefits. The support service helped participants to move up the career ladder towards better paid and more stable jobs. Survey evidence also shows an improvement in non-cognitive
+skills and measures of grit. Other groups typically targetted include immigrants and refugees, and youths.
+
+ALMP design takes demand side into account. To do so, identifying occupations in high demand and appropriate wage levels typically consists in running surveys. ALMP are also more and more adapted to the specificity of developing countries, where labor frictions on both sides of the market appear to hinder an efficient allocation of firms ans workers. Alfonsi et al. (2020) consider general equilibrium effects to conclude that vocational training of young workers is more effective than policies offering incentives for firms to train workers. An important determinant of the labor market success of workers receiving vocational training is a skill certificate
+that is recognized by employers. This allows workers to effectively signal their
+skills and facilitates career moves of trained workers.
+
+Spillover effects from the treatment to the control group can threaten the quality of a lot of results. Crépon et al. (2013) evaluated a job search assistance program for young unemployed university graduates in France which was implemented across
+multiple local labor markets. The evaluation design is based on a double ran-
+domization strategy. In a first step treatment intensities determining the share of treated job seekers, were randomly assigned across local labor markets. In the
+second steps eligible job seekers were randomly assigned to the JSA program
+according to the local treatment intensities. This design allows comparisons of treated and control individual within each region, but also across regions. If
+individuals in the control group in regions with high treatment intensity have
+systematically different outcomes than control individuals in regions where the
+program is not implemented this is indicative of spillover effects. They find evidence of substantial spillover effects which lead to displacement of workers in the control group. Overall, more jobs were lost than found. Other remarkable studies on the matter include Cheung et al. (2023), Altmann et al. (2022), and Belot et al. (2019).
+
+Welfare analyses of ALMP programs are very recent and heterogeneous in terms of what gains are considered. Using MVPF in that context (Hendren and Sprung-Keyser, 2020) is yet to be the standard. Regarding outcome variables, in addition to earnings, cognitive and non-cognitive skills, health, mortality, well-being, life and job satisfaction, social well-being, job search strategies, and search effort are becoming frequent. The mechanisms through which programs work seem to be: the targetting of well chosen groups (heterogeneity in program effect), certificates issued to participants, appropriate timing, non-cognitive skills acquired. Understanding mechanisms more in depth calls for more structural models. These models may also help simulating alternative policy scenarios and evaluating general equilibrium effects.
+
+\begin{thebibliography}{9}
+
+\bibitem{crepon2016}
+Bruno Crépon \& Gerard J. van den Berg, 2016. "Active Labor Market Policies," Annual Review of Economics, Annual Reviews, vol. 8(1), pages 521-546, October.
+
+
+\end{thebibliography}
+
+\end{document}

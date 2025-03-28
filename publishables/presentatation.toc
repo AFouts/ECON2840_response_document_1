@@ -1,5 +1,0 @@
-\babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Context and Motivation}{2}{0}{1}
-\beamer@sectionintoc {2}{Model}{5}{0}{2}
-\beamer@sectionintoc {3}{Empirics}{13}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{17}{0}{4}
